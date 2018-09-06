@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<style>
+    ul.menu{
+        margin:0 1px 0 0;
+
+        display:inline-block;
+        float:left}
+
+    ul.menu li {
+        background: none repeat scroll 0 0 #000;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        float: left;
+        font-family: arial;
+        line-height: 17px;
+        margin: 0;
+        position: relative; list-style:none
+    }
+
+
+    ul.menu li a {
+        color: #fff;
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 10px;
+        text-decoration: none;
+    }
+    ul.menu li > ul li {
+        width:100%;/*transition: all 0.7s ease-in 0s;*/ }
+    ul.menu li.home-page {
+        display:inline-block;
+        background:#000;
+
+        border:none !important
+    }
+
+    ul.menu li:hover,
+    ul.menu li.current {
+        background:#888;
+        border-right:#fff 1px solid;
+        border-left:#fff 1px solid;/*transition: all 0.7s ease-in 0s;*/
+    }
+
+    ul.menu li.home-page a {
+        height: 40px;
+        line-height: 34px;
+        padding: 0 10px;
+    }
+    ul.menu li.home-page span {
+        background-color:yellow;
+        width:19px;
+        height:19px;
+        display:block;
+        margin-top:10px;
+    }
+
+    .menu-toggle {
+        padding:0px;
+        background:none;
+        border-radius: 2px;
+    }
+
+
+    ul.menu li ul {
+        display: none;
+        left: 0;
+        padding: 13px 0 0;
+        position: absolute;
+        top: 50px;
+        width: 180px;/*transition: all 0.7s ease-in 0s;*/
+    }
+    ul.menu li:hover ul {
+        display:block;/*transition: all 0.7s ease-in 0s;*/}
+
+
+    .arrow {
+        border-bottom: 14px solid #000;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        content: "";
+        height: 0;
+        left: 34px;
+        position: absolute;
+        top: 0;
+        width: 0;
+    }
+</style>
+
+<body>
+<ul class="menu">
+    <li class="home-page current"><a href="index.html"><span></span></a></li>
+    <li><a href="o-nama.html">O nama</a>
+        <ul>
+            <span class="arrow"></span>
+            <li><a href="#">Tko smo mi?</a></li>
+            <li><a href="#">Sajmovi i seminari</a></li>
+            <li><a href="#">Posao</a></li>
+        </ul>
+    </li>
+    <li><a href="podrska-preuzimanja.html">Podrška i preuzimanja</a></li>
+    <li><a href="proizvodi.html">Proizvodi</a></li>
+    <li><a href="korisne-poveznice.html">Korisne poveznice</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</body>
+</html>
